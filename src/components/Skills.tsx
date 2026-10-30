@@ -2,13 +2,14 @@ import { skills } from "../data/portfolio";
 
 export default function Skills() {
   return (
-    <section id="skills" className="mx-auto max-w-5xl px-6 py-16">
-      <h2 className="font-display text-3xl font-bold">Skills</h2>
-      <dl className="mt-10 grid gap-8 sm:grid-cols-2">
+    <section id="skills" className="section-shell reveal">
+      <p className="eyebrow">My toolkit</p>
+      <h2 className="section-heading">Skills</h2>
+      <dl className="skills-grid">
         {Object.entries(skills).map(([group, items]) => (
-          <div key={group}>
+          <div key={group} className="skill-card">
             <dt className="font-semibold">{group}</dt>
-            <dd className="mt-2 text-[#2B3A46]">{items.join(", ")}</dd>
+            <dd>{items.join(" · ")}</dd>
           </div>
         ))}
       </dl>
