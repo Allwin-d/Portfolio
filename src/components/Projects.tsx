@@ -19,6 +19,20 @@ export default function Projects() {
               </div>
             </div>
             <div>
+              {"images" in p && Array.isArray(p.images) && (
+                <div className="mb-5 grid grid-cols-1 gap-3 sm:grid-cols-2">
+                  {p.images.map((image) => (
+                    <img
+                      key={image.src}
+                      src={image.src}
+                      alt={image.alt}
+                      loading="lazy"
+                      decoding="async"
+                      className="aspect-video w-full rounded-lg border border-[#D5DCDF] bg-white object-contain"
+                    />
+                  ))}
+                </div>
+              )}
               <p className="leading-relaxed text-[#2B3A46]">{p.description}</p>
               {Array.isArray(p.highlights) && p.contribution && (
                 <div className="mt-4">

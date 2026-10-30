@@ -1,3 +1,18 @@
+import driftLogin from "../assets/Drift project image 1 .png";
+import driftEntries from "../assets/Drift project image 2 .png";
+import driftMap from "../assets/Drift project image 3 .png";
+import flipkartHome from "../assets/Flipkart project image.png";
+import flipkartProduct from "../assets/Flipkart project image 2.png";
+import flipkartCart from "../assets/Flipkart project image 3.png";
+import flipkartFilters from "../assets/Flipkart project image 4.png";
+import kfcHome from "../assets/Kfc project image .png";
+import kfcMenu from "../assets/kfc project image 2 .png";
+import kfcCart from "../assets/Kfc project image 3 .png";
+import movieCatalogue from "../assets/Movie catalogue project image 1 .png";
+import movieDetails from "../assets/Movie catalogue project image 2 .png";
+import movieAddForm from "../assets/Movie catalogue project image 3.png";
+import movieDeleteDialog from "../assets/Movie catalogue project image 4 .png";
+
 export const profile = {
   name: "Allwin Selva D",
   role: "Full Stack Developer",
@@ -69,6 +84,11 @@ export const projects = [
     ],
     contribution:
       "Built a full-stack journaling experience with a React and TypeScript client, an Express and TypeScript API, and MongoDB persistence. Designed the entry flow to combine journal text with location and environmental context. Mood and location analytics are planned for a future iteration.",
+    images: [
+      { src: driftLogin, alt: "Drift sign-in page" },
+      { src: driftEntries, alt: "Drift journal entries list" },
+      { src: driftMap, alt: "Drift journal entries displayed on a map" },
+    ],
     stack: ["React", "TypeScript", "Vite", "Tailwind CSS", "React Router", "React Leaflet", "TanStack Query", "Axios", "Node.js", "Express", "MongoDB", "Mongoose", "JWT", "Zod", "OpenStreetMap / Nominatim", "OpenWeather API"],
     github: "https://github.com/Allwin-d/Drift",
     live: "https://drift-one-self.vercel.app/",
@@ -86,6 +106,12 @@ export const projects = [
     ],
     contribution:
       "Built a React and TypeScript client connected to a Node.js and Express API, with MongoDB and Mongoose for persistence. Used TanStack Query and Axios for client-side data fetching and API requests.",
+    images: [
+      { src: movieCatalogue, alt: "Movie Catalogue admin movie list" },
+      { src: movieDetails, alt: "Movie Catalogue movie details page" },
+      { src: movieAddForm, alt: "Movie Catalogue add movie form" },
+      { src: movieDeleteDialog, alt: "Movie Catalogue delete confirmation dialog" },
+    ],
     stack: ["React", "TypeScript", "TanStack Query", "Axios", "Tailwind CSS", "React Router DOM", "Node.js", "Express", "MongoDB", "Mongoose", "JWT", "bcryptjs"],
     github: "https://github.com/Allwin-d/Movie-Catalog-Application",
     live: "https://movie-catalog-application-blush.vercel.app",
@@ -104,6 +130,11 @@ export const projects = [
     ],
     contribution:
       "Built a React and TypeScript ordering experience with React Router DOM for navigation, Axios and TanStack Query for menu data, and Redux Toolkit for cart state. Styled the responsive interface with Tailwind CSS.",
+    images: [
+      { src: kfcHome, alt: "KFC Clone restaurant home page" },
+      { src: kfcMenu, alt: "KFC Clone category menu and food items" },
+      { src: kfcCart, alt: "KFC Clone menu with food item and add-to-cart action" },
+    ],
     stack: ["React 19", "TypeScript", "Vite", "React Router DOM", "Redux Toolkit", "React Redux", "TanStack Query", "Axios", "Tailwind CSS 3", "React Toastify"],
     github: "https://github.com/Allwin-d/Kfc-Clone",
     live: "https://kfc-clone-dusky.vercel.app/",
@@ -122,6 +153,12 @@ export const projects = [
     ],
     contribution:
       "Built reusable product, filtering, cart, and comment interfaces in React and TypeScript. Connected product data with Axios and TanStack Query, integrated a mock API for comment and rating operations, managed cart state with Redux Toolkit, and used URL-based search state and debouncing to avoid firing a request on every keystroke.",
+    images: [
+      { src: flipkartHome, alt: "Flipkart Clone home page with product search and categories" },
+      { src: flipkartProduct, alt: "Flipkart Clone product details with image gallery and purchase actions" },
+      { src: flipkartCart, alt: "Flipkart Clone shopping cart with order price details" },
+      { src: flipkartFilters, alt: "Flipkart Clone product results with rating, discount, and price filters" },
+    ],
     stack: ["React", "TypeScript", "Tailwind CSS", "React Router DOM", "TanStack Query", "Axios", "Redux Toolkit"],
     github: "https://github.com/Allwin-d/Flipkart-clone",
     live: "https://flipkart-clone-ruby-two.vercel.app",
