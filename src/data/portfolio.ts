@@ -17,7 +17,7 @@ export const profile = {
   name: "Allwin Selva D",
   role: "Full Stack Developer",
   tagline:
-    "I build React + TypeScript interfaces and the Prisma/PostgreSQL backends behind them. Currently shipping an enterprise healthcare engagement platform for IQVIA.",
+    "I build full-stack applications with React and TypeScript, backed by Node.js and Express APIs using Prisma with PostgreSQL or Mongoose with MongoDB. I enjoy turning complex ideas into useful, responsive experiences.",
   email: "allwinselva7@gmail.com",
   phone: "+91 8883673673",
   github: "https://github.com/Allwin-d",
@@ -115,7 +115,6 @@ export const projects = [
     stack: ["React", "TypeScript", "TanStack Query", "Axios", "Tailwind CSS", "React Router DOM", "Node.js", "Express", "MongoDB", "Mongoose", "JWT", "bcryptjs"],
     github: "https://github.com/Allwin-d/Movie-Catalog-Application",
     live: "https://movie-catalog-application-blush.vercel.app",
-    backendApi: "https://movie-catalog-application.onrender.com",
   },
   {
     title: "KFC Clone",

@@ -9,32 +9,13 @@ export default function Projects() {
       <div className="project-list">
         {projects.map((p) => (
           <article key={p.title} className="project-card reveal">
-            <div>
+            <div className="project-content">
               <h3 className="project-title">{p.title}</h3>
               {p.status && <p className="project-status">{p.status}</p>}
               <div className="project-links">
                 <a href={p.github} target="_blank" rel="noreferrer" className="project-link">Code ↗</a>
                 {p.live && <a href={p.live} target="_blank" rel="noreferrer" className="project-link">Live demo ↗</a>}
-                {"backendApi" in p && p.backendApi && (
-                  <a href={p.backendApi} target="_blank" rel="noreferrer" className="project-link">Backend API ↗</a>
-                )}
               </div>
-            </div>
-            <div>
-              {"images" in p && Array.isArray(p.images) && (
-                <div className="project-gallery">
-                  {p.images.map((image) => (
-                    <img
-                      key={image.src}
-                      src={image.src}
-                      alt={image.alt}
-                      loading="lazy"
-                      decoding="async"
-                      className="project-image"
-                    />
-                  ))}
-                </div>
-              )}
               <p className="project-description">{p.description}</p>
               {Array.isArray(p.highlights) && p.contribution && (
                 <div className="mt-4">
@@ -52,6 +33,20 @@ export default function Projects() {
                 ))}
               </ul>
             </div>
+            {"images" in p && Array.isArray(p.images) && (
+              <div className="project-gallery">
+                {p.images.map((image) => (
+                  <img
+                    key={image.src}
+                    src={image.src}
+                    alt={image.alt}
+                    loading="lazy"
+                    decoding="async"
+                    className="project-image"
+                  />
+                ))}
+              </div>
+            )}
           </article>
         ))}
       </div>
