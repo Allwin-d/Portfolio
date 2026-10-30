@@ -1,4 +1,4 @@
-const links = ["experience", "projects", "skills", "contact"];
+const links = ["experience", "education", "projects", "skills", "contact"];
 
 export default function Navbar() {
   return (

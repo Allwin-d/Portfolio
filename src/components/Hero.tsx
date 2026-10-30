@@ -15,6 +15,9 @@ export default function Hero() {
         <a href={profile.github} target="_blank" rel="noreferrer" className="rounded border border-[#12202B] px-5 py-3 font-medium hover:bg-[#12202B] hover:text-white">
           GitHub
         </a>
+        <a href="/Allwin_Selva_D_Resume.pdf" download className="rounded border border-[#12202B] px-5 py-3 font-medium hover:bg-[#12202B] hover:text-white">
+          Download Resume
+        </a>
       </div>
     </section>
   );
