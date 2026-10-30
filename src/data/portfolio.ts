@@ -62,6 +62,15 @@ export const projects = [
     live: "https://movie-catalog-application-blush.vercel.app",
   },
   {
+    title: "KFC Clone",
+    status: "",
+    description:
+      "A fully responsive KFC ordering app where users can browse categorized menus, view product details, add items to a cart, and proceed to checkout, with cart logic and dynamic UI.",
+    stack: ["React", "TypeScript", "Tailwind CSS"],
+    github: "https://github.com/Allwin-d/Kfc-Clone",
+    live: "https://kfc-clone-dusky.vercel.app/",
+  },
+  {
     title: "Flipkart Clone",
     status: "",
     description:
